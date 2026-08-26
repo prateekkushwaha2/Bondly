@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-08-25T14:03:32.448Z",
+  "model": "openai/gpt-oss-20b",
+  "dataset": {
+    "cases": 60,
+    "synthetic": true,
+    "customer_data_used": false
+  },
+  "metrics": {
+    "exact_action_accuracy": 1,
+    "intervention_precision": 1,
+    "intervention_recall": 1,
+    "false_positive_interventions": 0,
+    "false_positive_exposure_inr": 0,
+    "missed_recovery_opportunities": 0,
+    "missed_recovery_value_inr": 0,
+    "eligible_recovery_value_inr": 477000,
+    "simulated_recovered_inr": 477000
+  },
+  "exceptions": []
+}
