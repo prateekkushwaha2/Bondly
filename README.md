@@ -48,7 +48,9 @@ The owner controls only visibility:
 
 It is deliberately **not** a credit score, identity check, “trustworthy/untrustworthy” label, loan recommendation, or guarantee of future behaviour. Bank balances, income, phone numbers, agreement amounts, private notes, disputes, and financial-health inputs are excluded.
 
-### 2. AI Recovery Agent — recover revenue after a missed payment
+### 2. AI Decision Copilot + Recovery Agent — act before and after a missed payment
+
+Before a commitment, the **AI Borrower Planner** uses the member's voluntary private financial context to frame a repayment plan and discussion questions. The **Lender Review** and **Guarantor Review** use the live agreement and repayment record to explain factors, safeguards, and questions to discuss. These tools never issue an approve/decline verdict.
 
 When a recorded payment becomes overdue, Bondly places the agreement in the AI Recovery queue. The Recovery Agent reads only the selected agreement's live facts:
 
@@ -135,7 +137,7 @@ npm run eval:recovery
 React + Vite
   └─ Supabase Auth + role-specific UI
        ├─ agreements, approvals, payments, notifications
-       ├─ Recovery Agent → Groq via secure Edge Function
+       ├─ Decision + Recovery Agents → Groq via secure Edge Functions
        └─ Reputation Agent → Groq via secure Edge Function
 
 Supabase Postgres + RLS
@@ -161,6 +163,7 @@ VITE_SUPABASE_ANON_KEY=YOUR_SUPABASE_PUBLISHABLE_KEY
 ```powershell
 npx supabase functions deploy recovery-agent --use-api
 npx supabase functions deploy reputation-agent --use-api
+npx supabase functions deploy decision-agent --use-api
 ```
 
 5. Start the app:

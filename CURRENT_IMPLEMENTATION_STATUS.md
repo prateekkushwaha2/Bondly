@@ -66,6 +66,7 @@ verify-razorpay-payment
 razorpay-webhook              # Disable JWT verification only here
 recovery-agent
 reputation-agent
+decision-agent
 ```
 
 ## Required Edge Function secrets
