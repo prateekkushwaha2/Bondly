@@ -1,3 +1,15 @@
+rajprateek874@gmail.com - email 
+123456 - password
+-----------------------------------------------------------------------------------
+rajprateek875@gmail.com - email 
+123456 - password
+-----------------------------------------------------------------------------------
+26f2001630@ds.study.iitm.ac.in - email
+123456 - password
+
+All 3 are testing account with role as role, lender, grantor
+
+
 # Bondly — explainable AI for safer informal lending
 
 **Razorpay AI Buildathon · AI Revenue Recovery**
